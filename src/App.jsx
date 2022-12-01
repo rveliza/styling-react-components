@@ -14,14 +14,14 @@ const App = () => {
 
     if (courseGoals.length > 0) {
         content = (
-            <p>There are many goals!</p>
+            <CourseGoalList items={courseGoals}/>
         );
     }
 
     return(
         <div>
             <section id="goal-form">
-                <CourseGoalList />
+                <p>Form goes here</p>
             </section>
             <section id="goals">
                 {content}

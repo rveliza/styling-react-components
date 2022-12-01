@@ -4,10 +4,11 @@ const deleteHandler = () => {
     console.log('This item will be deleted');
 }
 
-const CourseGoalItem = () => {
+const CourseGoalItem = props => {
+    // console.log(props.children)
     return (
         <li className="goal-item" onClick={deleteHandler}>
-            This is a list item!
+            {props.children}
         </li>
     );
 }
