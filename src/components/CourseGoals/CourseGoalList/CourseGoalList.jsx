@@ -1,10 +1,12 @@
 import React from "react";
 
+import CourseGoalItem from "../CourseGoalItem/CourseGoalItem";
+
 const CourseGoalList = props => {
     return (
         <ul className="goal-list">
-            <li>Item 1</li>
-            <li>Item 2</li>
+            <CourseGoalItem />
+            <CourseGoalItem />
         </ul>
     );
 }
