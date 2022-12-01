@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import CourseGoalList from "./components/CourseGoals/CourseGoalList/CourseGoalList";
+
 const App = () => {
     const [courseGoals, setCourseGoals] = useState([
         { text: 'Do all exercises!', id: 'g1' },
@@ -19,7 +21,7 @@ const App = () => {
     return(
         <div>
             <section id="goal-form">
-                <h3>Coarse input goes here</h3>
+                <CourseGoalList />
             </section>
             <section id="goals">
                 {content}
