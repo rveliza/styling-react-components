@@ -8,13 +8,17 @@ const App = () => {
         { text: 'Finish the course!', id: 'g2' }
     ]);
 
+    const deleteItemHandler = goalId => {
+        console.log('This is the goalId: ', goalId);
+    }
+
     let content = (
         <p style={{ textAling: 'center' }}>No goals found. Maybe add one?</p>
     );
 
     if (courseGoals.length > 0) {
         content = (
-            <CourseGoalList items={courseGoals}/>
+            <CourseGoalList items={courseGoals} onDeleteItem = {deleteItemHandler}/>
         );
     }
 
